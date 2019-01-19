@@ -2,7 +2,6 @@ import React from 'react';
 import Thumbnail from './VideoThumbnail';
 
 const VideoList = ({videos, onVideoSelect}) => {
-    console.log(videos);
     const videoArray = videos.map((video) => {
         return <Thumbnail 
             key={video.id.videoId || video.id.channelId} 
